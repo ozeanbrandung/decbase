@@ -1,0 +1,40 @@
+.header__flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	//background-color: blue;
+	.header__nav {
+		//background-color: pink;
+		margin-left: auto; //Заставила навигацию отодвинуться впритык к кнопке и дальше от логотипа, пространство слева расширилось на максимально возможн длину
+		.header__nav-item {
+			display: inline-block;
+
+			a {
+				line-height: 22px;
+				font-family: $prim-font;
+				text-transform: none;
+				font-size: 16px;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-left: 40px;
+
+				&.current {
+				color: $light-grey-text;
+				}
+			}
+		}
+	}
+}
+
+.header__button {
+	width: 97px;
+	height: 32px;
+	margin-left: 64px;
+	a.sign-up {
+		font-size: 16px;
+		line-height: 32px;
+	}
+}
+.button_skin-colored {
+	background-color: $decor-col;
+}

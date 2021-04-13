@@ -1,0 +1,39 @@
+@import "null";
+@import "config";
+// @import "fonts";
+@import  "header";
+
+//Preview Section
+.preview__flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row nowrap;
+	.prewiew__text {
+		flex: 1 1 603px;
+	}
+	.preview__image {
+		flex: 1 1 717px;
+	}
+}
+.preview {
+	margin-top: 107px;
+	h1.preview__slogan {
+		font-family: $heading-font;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 72px;
+		line-height: 78px;
+		margin-top: 12px;
+	}
+	p.preview__paragraph {
+		line-height: 30px;
+		margin-top: 23px;
+	}
+	.preview__button {
+		margin-top: 28px;
+		height: 42px;
+		width: 142px;
+	}
+}
+
