@@ -103,7 +103,7 @@ div {
 }
 
 .container {
-  width: 1348px;
+  width: 1373px;
   margin: 0 auto;
 }
 
@@ -462,7 +462,6 @@ img {
 .reviews .reviews__flex-box {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 183px;
 }
 
 .reviews .reviews__flex-box .reviews__comment-card {
@@ -488,6 +487,7 @@ img {
 
 .reviews .reviews__flex-box .reviews__comment-card .reviews__text {
   float: left;
+  text-align: left;
 }
 
 .reviews .reviews__flex-box .reviews__comment-card .reviews__text p {
@@ -522,4 +522,58 @@ img {
 .reviews .reviews__flex-box .reviews__comment-card span .rakha:before {
   content: '../img/rakha.webp';
   background: url("../img/rakha.webp") no-repeat;
+}
+
+.blog {
+  padding-top: 90px;
+  background-color: #F8F8F8;
+  /*.blog__flex-box {
+		.flex-elem2 {
+			margin-left: 150px;
+		}
+	}*/
+}
+
+.blog .blog__flex-box {
+  padding-bottom: 122px;
+}
+
+.blog .blog__heading {
+  margin-bottom: 83px;
+  text-align: center;
+}
+
+.blog .blog__sm-heading {
+  text-align: center;
+}
+
+.blog .blog__image {
+  width: 554px;
+  height: 387px;
+  margin-bottom: 60px;
+}
+
+.blog .blog__card-text {
+  text-align: left;
+  margin: 0 0 45px 0;
+}
+
+.blog .blog__card-text .card-heading {
+  font-family: #212121;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 28px;
+  margin-bottom: 17px;
+}
+
+.blog .blog__card-text p {
+  line-height: 28px;
+}
+
+.blog .blog__button {
+  width: 271px;
+  height: 53.06px;
+  border-radius: 25px 0px;
+  padding-top: 10px;
 }
