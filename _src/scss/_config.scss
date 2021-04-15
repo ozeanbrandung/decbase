@@ -49,6 +49,10 @@ $heading-font: 'Poppins', sans-serif;
 	transition: all 0.5s ease-out; 
 }
 
+p, span, div {
+	text-color: $dark-grey-text;
+}
+
 .container {
 	width: 1348px;
 	margin: 0 auto;		
@@ -62,7 +66,7 @@ $heading-font: 'Poppins', sans-serif;
 }
 
 section {
-	margin-bottom: 20vh;
+	margin-bottom: 25vh;
 }
 
 .header {
@@ -72,7 +76,7 @@ section {
 }
 
 .button {
-	border-radius: 15px 0;
+	border-radius: 20px 0;
 	display: inline-block;
 	background-color: $links-col;
 	text-align: center;

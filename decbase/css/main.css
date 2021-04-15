@@ -96,6 +96,12 @@ h6 {
 
 /*--------------------*/
 
+p,
+span,
+div {
+  text-color: #212121;
+}
+
 .container {
   width: 1348px;
   margin: 0 auto;
@@ -118,7 +124,7 @@ h6 {
 }
 
 section {
-  margin-bottom: 20vh;
+  margin-bottom: 25vh;
 }
 
 .header {
@@ -126,7 +132,7 @@ section {
 }
 
 .button {
-  border-radius: 15px 0;
+  border-radius: 20px 0;
   display: inline-block;
   background-color: #37806B;
   text-align: center;
@@ -232,8 +238,6 @@ img {
 }
 
 .header__button {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   width: 97px;
   height: 32px;
   margin-left: 64px;
@@ -330,8 +334,8 @@ img {
 
 .about__flex .about__image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 832px;
-          flex: 1 1 832px;
+      -ms-flex: 1 1 682px;
+          flex: 1 1 682px;
 }
 
 .about .about__heading {
@@ -358,4 +362,85 @@ img {
 .about .img-card:after {
   left: -34px;
   top: -33px;
+}
+
+.history__flex .history__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 603px;
+          flex: 1 1 603px;
+}
+
+.history__flex .history__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 682px;
+          flex: 1 1 682px;
+}
+
+.history .history__text {
+  margin-right: 154px;
+}
+
+.history .history__text .history__heading {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 65px;
+}
+
+.history .history__text .history__heading .history__twenty-bg {
+  background: url("img/twenty_bg.webp") content-box 100% auto center;
+}
+
+.history .history__text .history__heading .history__twenty-bg .history__twenty {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 288px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+.history .history__button {
+  margin-top: 46px;
+  width: 142.15px;
+  height: 42.81px;
+}
+
+.achievements {
+  background: #F8F8F8;
+  padding: 87px 0 105px;
+}
+
+.achievements .achievements__heading {
+  line-height: 60px;
+  /* or 125% */
+  text-align: center;
+  max-width: 817px;
+  margin: 0 auto 87px;
+}
+
+.achievements .achievements__grid-container {
+  height: 273px;
+  display: grid;
+  grid-gap: 200px;
+  grid: auto/repeat(4, 185px);
+}
+
+.achievements .achievements__grid-container .achievements__grid-card {
+  width: 185px;
+  height: 182px;
+  padding: 47px 0;
+  text-align: center;
+}
+
+.achievements .achievements__grid-container .achievements__grid-card:nth-child(even) {
+  margin-top: auto;
+}
+
+.achievements .achievements__grid-container .achievements__grid-card span {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  color: #212121;
 }

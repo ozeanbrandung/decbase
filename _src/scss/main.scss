@@ -77,7 +77,7 @@
 		flex: 1 1 603px; 
 	}
 	.about__image {
-		flex: 1 1 832px; //максимальная ширина изображения, разрешение сжиматься и расширяться
+		flex: 1 1 682px; //832 максимальная ширина изображения, разрешение сжиматься и расширяться
 	}
 }
 
@@ -106,6 +106,81 @@
 		&:after {
 			left:-34px;
 			top:-33px;
+		}
+	}
+}
+
+.history__flex {
+	.history__text {
+		flex: 1 1 603px; 
+	}
+	.history__image {
+		flex: 1 1 682px; //максимальная ширина изображения, разрешение сжиматься и расширяться
+	}
+}
+
+.history {
+	.history__text {
+		margin-right: 154px;
+		.history__heading {
+			font-style: normal;
+			font-weight: 500;
+			line-height: 65px;
+			.history__twenty-bg {
+				background: url('img/twenty_bg.webp') content-box 100% auto center;
+				.history__twenty {
+					font-family: $prim-font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 288px;
+					line-height: 28px;
+					letter-spacing: -0.01em;
+					//color: transparent;
+				}
+			}	
+		}
+	}
+	.history__button {
+		margin-top: 46px;
+		width: 142.15px;
+		height: 42.81px;
+	}
+}
+
+.achievements {
+	background: #F8F8F8;
+	padding: 87px 0 105px;
+	.achievements__heading{
+		line-height: 60px;
+		/* or 125% */
+		text-align: center;
+		max-width: 817px;
+		margin: 0 auto 87px;
+		//margin-bottom: 87px;
+	}
+	.achievements__grid-container{
+		height: 273px;
+		display: grid;
+		grid-gap: 200px;
+		grid: auto  / repeat(4, 185px);
+		.achievements__grid-card {
+			width: 185px;
+			height: 182px;
+			padding: 47px 0;
+			text-align: center;
+			//vertical-align: center;
+			&:nth-child(even){
+  				margin-top: auto;
+			}
+
+			span {
+				font-family: $prim-font;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 50px;
+				line-height: 60px;
+				color: $dark-grey-text;
+			}
 		}
 	}
 }
