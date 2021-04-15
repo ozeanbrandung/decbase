@@ -1,8 +1,10 @@
 .header__flex {
+	//box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+	padding-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	//background-color: blue;
+	//background-color: white;
 	.header__nav {
 		//background-color: pink;
 		margin-left: auto; //Заставила навигацию отодвинуться впритык к кнопке и дальше от логотипа, пространство слева расширилось на максимально возможн длину
@@ -27,6 +29,7 @@
 }
 
 .header__button {
+	align-self: flex-start;
 	width: 97px;
 	height: 32px;
 	margin-left: 64px;
@@ -38,3 +41,4 @@
 .button_skin-colored {
 	background-color: $decor-col;
 }
+

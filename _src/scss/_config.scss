@@ -17,6 +17,7 @@ $heading-font: 'Poppins', sans-serif;
 	}
 }
 
+
 //Миксины для медиа запросов
 
 @mixin mediaSm {
@@ -53,10 +54,21 @@ $heading-font: 'Poppins', sans-serif;
 	margin: 0 auto;		
 }
 
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row nowrap;
+}
+
+section {
+	margin-bottom: 20vh;
+}
+
 .header {
-	position: sticky;
-	top: 41px;
-	//margin-bottom: 107px;
+	//position: sticky;
+	margin-top: 41px;
+	//z-index: 100;
 }
 
 .button {
@@ -85,6 +97,12 @@ $heading-font: 'Poppins', sans-serif;
 	color: $light-grey-text;
 	font-weight: 600;
 	font-size: 20px;
+	line-height: 30px;
+}
+
+.section-heading {
+	font-family: $heading-font;
+	font-size: 48px;
 }
 
 img {
@@ -94,6 +112,7 @@ img {
 }
 
 .img-card {
+	z-index: 0;
 	position:relative;
 	border-radius: 100px 0;
 	img {
@@ -112,4 +131,9 @@ img {
 	}
 }
 
-
+.card {
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+	border-radius: 60px 0px;
+	padding-left: 95px;
+	padding-right: 23px;
+}

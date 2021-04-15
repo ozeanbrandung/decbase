@@ -5,10 +5,10 @@
 
 //Preview Section
 .preview__flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-flow: row nowrap;
+	//display: flex;
+	//justify-content: space-between;
+	//align-items: center;
+	//flex-flow: row nowrap;
 	.prewiew__text {
 		flex: 1 1 603px;
 	}
@@ -17,7 +17,7 @@
 	}
 }
 .preview {
-	margin-top: 107px;
+	margin-top: 107px; // заданное число, между хэдер и превью
 	h1.preview__slogan {
 		font-family: $heading-font;
 		font-style: normal;
@@ -37,3 +37,75 @@
 	}
 }
 
+.preview__paragraph {
+	padding-right: 10px;
+}
+
+.preview {
+	margin-bottom: 10vh;
+}
+
+.service__slogan {
+	font-weight: 500;
+	line-height: 78px;
+	margin-bottom: 50px;
+}
+
+.service__card {
+	margin: 0 18px 0 18px;
+	width: 425px;
+	height: 193px;
+	&:nth-child(even) {
+		background-color: $decor-col;
+		color: $white-text;
+		p {
+			color: $white-text;
+		}
+	}
+	.service__card-heading {
+		font-family: $prim-font;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 78px;
+		letter-spacing: 1px;
+	}
+}
+
+.about__flex {
+	.about__text {
+		flex: 1 1 603px; 
+	}
+	.about__image {
+		flex: 1 1 832px; //максимальная ширина изображения, разрешение сжиматься и расширяться
+	}
+}
+
+.about {
+	.about__heading {
+		font-style: normal;
+		font-weight: 500;
+		line-height: 57px;
+	}
+	.about__text {
+		margin-left: 100px;
+		p.about__paragraph {
+		line-height: 30px;
+		margin-top: 22px;
+	}
+	}
+	.about__button {
+		margin-top: 46px;
+		width: 142.15px;
+		height: 42.81px;
+	}
+}
+
+.about {
+	.img-card {
+		&:after {
+			left:-34px;
+			top:-33px;
+		}
+	}
+}
