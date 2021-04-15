@@ -55,6 +55,9 @@
 	margin: 0 18px 0 18px;
 	width: 425px;
 	height: 193px;
+	p {
+		line-height: 28px;
+	}
 	&:nth-child(even) {
 		background-color: $decor-col;
 		color: $white-text;
@@ -67,7 +70,7 @@
 		font-style: normal;
 		font-weight: bold;
 		font-size: 24px;
-		line-height: 78px;
+		line-height: 68px;
 		letter-spacing: 1px;
 	}
 }
@@ -169,6 +172,7 @@
 			padding: 47px 0;
 			text-align: center;
 			//vertical-align: center;
+			box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
 			&:nth-child(even){
   				margin-top: auto;
 			}
@@ -180,6 +184,71 @@
 				font-size: 50px;
 				line-height: 60px;
 				color: $dark-grey-text;
+			}
+		}
+	}
+}
+
+.reviews {
+	text-align: center;
+	.reviews__heading {
+		margin-bottom: 100px;
+	}
+	.reviews__flex-box {	
+		justify-content: space-around;
+		margin-bottom: 183px;
+		.reviews__comment-card {
+			width: 571px;
+			height: 226px;
+			padding: 41px 10px 0 102px;
+			box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+			&:after {
+				content: '”';
+				position: absolute;
+				margin-top: -30px;
+				margin-left: -70px;
+				//width: 38px;
+				//height: 109px;
+				font-family: 'Noto Sans SC', sans-serif;
+				//font-family: Basic Sans SF; // макете - этот, но его надо загружать
+				font-style: normal;
+				font-weight: bold;
+				font-size: 96px;
+				line-height: 109px;
+				color: #B0855B;
+			}
+			.reviews__text {
+				float: left;
+				p {
+					line-height: 28px;
+				}
+			}
+			span {
+				//float: left;
+				color: $dark-grey-text;
+				font-family: $prim-font;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 33px;
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					background-color: pink;
+					width: 130px;
+					height: 130px;
+					border-radius: 40px 0;
+					margin-left: -160px; //130 - картинка + 30 по фигме
+				}
+				.louis:before {
+					content: '../img/louis.webp';
+					background: url('../img/louis.webp') no-repeat;
+				}
+				.rakha:before {
+					content: '../img/rakha.webp';
+					background: url('../img/rakha.webp') no-repeat;
+				}
 			}
 		}
 	}

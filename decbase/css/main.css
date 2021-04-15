@@ -308,6 +308,10 @@ img {
   height: 193px;
 }
 
+.service__card p {
+  line-height: 28px;
+}
+
 .service__card:nth-child(even) {
   background-color: #CAA892;
   color: #fff;
@@ -322,7 +326,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 78px;
+  line-height: 68px;
   letter-spacing: 1px;
 }
 
@@ -430,6 +434,8 @@ img {
   height: 182px;
   padding: 47px 0;
   text-align: center;
+  -webkit-box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
 }
 
 .achievements .achievements__grid-container .achievements__grid-card:nth-child(even) {
@@ -443,4 +449,77 @@ img {
   font-size: 50px;
   line-height: 60px;
   color: #212121;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.reviews .reviews__heading {
+  margin-bottom: 100px;
+}
+
+.reviews .reviews__flex-box {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 183px;
+}
+
+.reviews .reviews__flex-box .reviews__comment-card {
+  width: 571px;
+  height: 226px;
+  padding: 41px 10px 0 102px;
+  -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+          box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+}
+
+.reviews .reviews__flex-box .reviews__comment-card:after {
+  content: '”';
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -70px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 109px;
+  color: #B0855B;
+}
+
+.reviews .reviews__flex-box .reviews__comment-card .reviews__text {
+  float: left;
+}
+
+.reviews .reviews__flex-box .reviews__comment-card .reviews__text p {
+  line-height: 28px;
+}
+
+.reviews .reviews__flex-box .reviews__comment-card span {
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.reviews .reviews__flex-box .reviews__comment-card span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: pink;
+  width: 130px;
+  height: 130px;
+  border-radius: 40px 0;
+  margin-left: -160px;
+}
+
+.reviews .reviews__flex-box .reviews__comment-card span .louis:before {
+  content: '../img/louis.webp';
+  background: url("../img/louis.webp") no-repeat;
+}
+
+.reviews .reviews__flex-box .reviews__comment-card span .rakha:before {
+  content: '../img/rakha.webp';
+  background: url("../img/rakha.webp") no-repeat;
 }
